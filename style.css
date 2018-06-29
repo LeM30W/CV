@@ -53,7 +53,6 @@ content {
 .fullcontent{
 	display: flex;
 	width: 100%;
-	height: 100%;
 	padding: 0;
 }
 
@@ -239,7 +238,6 @@ nav.mastering .bar:after {
 content .separator {
 	flex-direction: column !important;
 	width: 30px;
-	margin-top: -15px;
 }
 
 .separator .rad1 {
@@ -400,7 +398,6 @@ article.data {
 	font-size: 25px;
 	line-height: 20px;
 	color: #000;
-	overflow: hidden;
 }
 
 article.data h1 {
@@ -411,8 +408,8 @@ article.data h1 {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin: -10px 0 10px 0;
-	padding: 10px 20px;
+	margin: 0;
+	padding: 3px 20px 10px 20px;
 	background: linear-gradient(to right, transparent, rgba(0, 173, 240, 0.1), transparent, rgba(0, 173, 240, 0.1), transparent, rgba(0, 173, 240, 0.2));
 	text-shadow: 3px 3px 5px white;
 }
@@ -427,7 +424,7 @@ article.data h1:hover {
 article.data h1::after {
   position: absolute;
   z-index: -1;
-  bottom: 10px;
+  bottom: 0;
   left: 0;
   content: '';
   width: 100%;
@@ -667,6 +664,8 @@ article.data .d2.purple p b {
 	height: 100%;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.7);
+	margin: 0;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
 .sep {
@@ -743,67 +742,16 @@ article.data .d2.purple p b {
 
 @keyframes shining {
 	0%{ background-position-x: 0px; }
-	100% { background-position-x: 100%; }
+	100% { background-position-x: 1600px; }
 }
 
-@keyframes gloss {
-	from { background: linear-gradient(to right, transparent, rgba(0, 173, 240, 0.1), transparent, rgba(0, 173, 240, 0.1), transparent, rgba(0, 173, 240, 0.2), transparent); }
-	to { background: linear-gradient(to right, rgba(0, 173, 240, 0.1), transparent, rgba(0, 173, 240, 0.1), transparent, rgba(0, 173, 240, 0.2), transparent, rgba(0, 173, 240, 0.2)); }
-}
-
-@keyframes move {
-    0%, 100% { transform: translateX(0px); }
-    50% { transform: translateX(50px); }
-}
 
 @keyframes skew {
     0% { transform: skewX(0deg); }
 		100% { transform: skewX(-12deg); }
 }
 
-@keyframes opacity {
-    0%, 100% { opacity: 1; }
-    50% { opacity: .25; }
-}
-
 @keyframes bar-stripes {
     0% { background-position: 0 0; }
     100% { background-position: 40px 0; }
-}
-
-@keyframes slideOutRight {
-  from { transform: translate3d(0, 0, 0); }
-  to {visibility: hidden; transform: translate3d(-100%, 0, 0); }
-}
-
-@keyframes slideInRight {
-  from { transform: translate3d(-100%, 0, 0); }
-  to {visibility: hidden; transform: translate3d(0, 0, 0); }
-}
-
-
-@keyframes slideOutUp {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-}
-
-@keyframes slideInDown {
-  from {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
 }
