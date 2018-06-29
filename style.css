@@ -132,16 +132,14 @@ nav.mastering .bar:after {
   animation: bar-stripes 2s linear infinite;
 }
 
-
-
 .navicon {
 	display: flex;
 	justify-content: center;
 	align-content: center;
 	position: fixed;
 	top: 50vh;
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 1px solid white;
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(255, 255, 255, 0.5);
 	height: 60px;
 	width: 30px;
 	margin: 0;
@@ -150,17 +148,35 @@ nav.mastering .bar:after {
 	cursor: pointer;
 }
 
-.navicon > i {
-	color: white;
-	font-size: 24px;
-	line-height: 58px;
-	font-weight: bold;
-	font-style: normal;
+.navicon:hover {
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
+.navicon i.transform {
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	transform: translateX(-50%) translateY(-50%);
+	display: block;
+	width: 22px;
+	height: 3px;
+	background-color: #f1f1f1;
+}
 
-.navicon:hover {
-	background-color: rgba(0, 0, 0);
+.navicon i.transform::before, .navicon i.transform::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-6px);
+	display: block;
+	width: 18px;
+	height: 3px;
+	background-color: #f1f1f1;
+}
+
+.navicon i.transform::after {
+	transform: translateY(6px);
 }
 
 
@@ -500,8 +516,13 @@ article.data h2 {
 	line-height: 20px;
 	color: #00ADF0;
 	padding-left: 10px;
-	margin: -15px 0 0 0;
+	margin: 0;
 }
+
+article.data .slide {
+	transition: all .2s ease-out;
+}
+
 
 article.data .slide h2.green {
 	color: #6BAE4F;
@@ -641,9 +662,11 @@ article.data .d2.purple p b {
 }
 
 .slide {
+	z-index: 1;
 	display: none;
 	height: 100%;
 	width: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .sep {

@@ -1,5 +1,8 @@
-var slider = document.getElementsByClassName("slider");
+var d = document;
+var slider = d.getElementsByClassName("slider");
 var i;
+
+// ouverture des div.data
 
 for (i = 0; i < slider.length; i++) {
     slider[i].addEventListener("click", function() {
@@ -17,19 +20,9 @@ for (i = 0; i < slider.length; i++) {
     });
 }
 
-// Boutton d'ouverture et de fermeture de la nav
+
+// Boutton d'ouverture et de fermeture de la NAV
 var open = false;
-
-function decide(){
-  if(open == true){
-    closeNav();
-  }else{
-    openNav();
-  }
-}
-
-
-var d = document;
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
@@ -54,3 +47,4 @@ function toggleNav() {
     open = true;
   }
 }
+//Fin de la Nav

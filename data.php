@@ -1,6 +1,6 @@
 <!--Nav Button-->
 <div class="navicon" onclick="toggleNav()">
-    <i class="material-icons chart">notes</i>
+    <i class="transform"></i>
 </div>
   <!--BLUE CONTENT-->
   <div class="colordiv">
