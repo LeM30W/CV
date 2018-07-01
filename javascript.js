@@ -26,8 +26,8 @@ var open = false;
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-    d.getElementById("mySidenav").style.width = "250px";
-    d.getElementById("main").style.marginLeft = "250px";
+    d.getElementById("mySidenav").style.width = "15%";
+    d.getElementById("main").style.marginLeft = "15%";
     open = true;
 }
 

@@ -637,19 +637,6 @@ article.data .d2.purple p b {
 }
 
 
-@media screen and (max-width: 1356px) {
-	article.data h1 p {
-		font-size: 35px;
-		}
-	article.data h2 {
-		font-size: 23px;
-	}
-	article.data h2 p {
-		font-size: 16px;
-	}
-}
-
-
 
 .colordiv {
 	display: flex;
@@ -686,27 +673,11 @@ article.data .d2.purple p b {
 }
 
 
-@media screen and (max-width: 820px) {
-		.ad {
-			max-height: 130px;
-		}
-		.photo {
-			height: 40vh;
-		}
-		.fullcontent{
-			margin-top: -50px;
-		}
-		.adresse {
-			display: none;
-		}
-		.mastering {
-			margin-top: 70px;
-		}
-}
 
 .sidenav {
-  height: 78vh;
+  height: 66vh;
   width: 0; /* change with JS */
+	max-width: 250px;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -738,6 +709,44 @@ article.data .d2.purple p b {
 
 #main {
     transition: margin-left .5s;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+	article.data h1 p {
+		font-size: 35px;
+		}
+	article.data h2 {
+		font-size: 23px;
+	}
+	article.data h2 p {
+		font-size: 16px;
+	}
+	article.data .slide h2 a{
+		font-size: 22px;
+	}
+	nav.mastering h1 {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 820px) {
+		.ad {
+			max-height: 130px;
+		}
+		.photo {
+			height: 40vh;
+		}
+		.fullcontent{
+			margin-top: -50px;
+		}
+		.adresse {
+			display: none;
+		}
+		.mastering {
+			margin-top: 70px;
+		}
 }
 
 @keyframes shining {
