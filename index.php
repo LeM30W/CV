@@ -27,10 +27,16 @@
   <content id="main">
     <?php include 'data.php'; ?>
   </content>
-  <!--/CONTENT-->
-
-  <footer></footer>
   </div>
+    <footer>
+    <div class="adresse chart" style="display:none;">
+      <i class="material-icons chart">mail</i>
+      <p>6 Rue Stéphane Morganti<br>L 'Abbaye Haute<br>30480 Cendras</p>
+    </div>
+    </footer>
+  <!--/CONTENT-->
+  </div>
+
 </body>
  <script type="text/javascript" src="javascript.js"></script>
 </html>

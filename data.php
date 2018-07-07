@@ -231,6 +231,4 @@
   </div>
 </article>
 <!--/DATA-->
-
-</div>
 <!--/PURPLE CONTENT-->

@@ -23,7 +23,7 @@ header {
 	max-height: 203px;
 	min-height: 165px;
   overflow: visible;
-  height: 34vh;
+  height: 20%;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
@@ -77,13 +77,6 @@ content {
 	letter-spacing: 1px;
 	margin: 0;
 	min-width: 245px;
-}
-
-
-@media screen and (max-width: 1100px) {
-	.adresse {
-		display: none;
-	}
 }
 
 nav {
@@ -636,8 +629,6 @@ article.data .d2.purple p b {
 	font-size: 22px;
 }
 
-
-
 .colordiv {
 	display: flex;
 	margin: 0;
@@ -675,8 +666,8 @@ article.data .d2.purple p b {
 
 
 .sidenav {
-  height: 66vh;
-  width: 0; /* change with JS */
+  height: 80%;
+  width: 0;
 	max-width: 250px;
   position: fixed;
   z-index: 1;
@@ -713,6 +704,12 @@ article.data .d2.purple p b {
 
 
 
+@media screen and (max-width: 1100px) {
+	.adresse {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 1440px) {
 	article.data h1 p {
 		font-size: 35px;
@@ -737,9 +734,6 @@ article.data .d2.purple p b {
 		}
 		.photo {
 			height: 40vh;
-		}
-		.fullcontent{
-			margin-top: -50px;
 		}
 		.adresse {
 			display: none;

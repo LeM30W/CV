@@ -14,8 +14,10 @@ for (i = 0; i < slider.length; i++) {
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
             panel.style.display = "none";
+            panel.style.opacity = "0";
         } else {
             panel.style.display = "block";
+            panel.style.opacity = "1";
         }
     });
 }
@@ -26,8 +28,8 @@ var open = false;
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-    d.getElementById("mySidenav").style.width = "15%";
-    d.getElementById("main").style.marginLeft = "15%";
+    d.getElementById("mySidenav").style.width = "200px";
+    d.getElementById("main").style.marginLeft = "200px";
     open = true;
 }
 
