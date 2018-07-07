@@ -588,17 +588,16 @@ article.data .d2.purple {
 article.data .d2 p {
 	line-height: 30px;
   padding-bottom: 10px;
+	font-size: 22px;
 }
 
 article.data .d2.green p {
 	padding-bottom: 0px;
-	font-size: 22px;
 	line-height: 23px;
 }
 
 article.data .d2.purple p {
 	padding-bottom: 0px;
-	font-size: 22px;
 	line-height: 23px;
 }
 
@@ -614,19 +613,16 @@ article.data .d2 h2 a {
 article.data .d2 p b {
 	color: #00ADF0;
   padding-right: 10px;
-	font-size: 25px;
 	line-height: 23px;
   font-weight: normal;
 }
 
 article.data .d2.green p b {
 	color: #6BAE4F;
-	font-size: 22px;
 }
 
 article.data .d2.purple p b {
 	color: #b6699d;
-	font-size: 22px;
 }
 
 .colordiv {
@@ -662,8 +658,6 @@ article.data .d2.purple p b {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
-
-
 
 .sidenav {
   height: 80%;
@@ -703,32 +697,47 @@ article.data .d2.purple p b {
 }
 
 
-
-@media screen and (max-width: 1100px) {
-	.adresse {
-		display: none;
-	}
-}
-
 @media screen and (max-width: 1440px) {
 	article.data h1 p {
 		font-size: 35px;
 		}
-	article.data h2 {
+	article.data h2, article.data .slide h2 a, nav.mastering h1, article.data .d2 p {
 		font-size: 23px;
 	}
 	article.data h2 p {
 		font-size: 16px;
 	}
-	article.data .slide h2 a{
-		font-size: 22px;
-	}
-	nav.mastering h1 {
-		font-size: 22px;
-	}
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1115px) {
+
+		article.data h1 p {
+			font-size: 30px;
+			}
+		article.data h2, article.data .slide h2 a, nav.mastering h1, {
+			font-size: 20px;
+		}
+		article.data h2 {
+			display: block;
+		}
+		article.data h2 p {
+			font-size: 10px;
+		}
+		.adresse {
+			display: none;
+		}
+}
+
+@media screen and (max-width: 1005px) {
+	article.data h1.slider p:nth-child(2) {
+		display: none;
+	}
+		article.data h1.slider p:nth-child(3) {
+			display: none;
+		}
+		article.data h1.slider {
+			justify-content: center;
+		}
 		.ad {
 			max-height: 130px;
 		}
@@ -738,9 +747,7 @@ article.data .d2.purple p b {
 		.adresse {
 			display: none;
 		}
-		.mastering {
-			margin-top: 70px;
-		}
+
 }
 
 @keyframes shining {
